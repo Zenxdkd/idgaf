@@ -107,7 +107,7 @@ math.random
 
 local Circle = Drawing.new("Circle")
 Circle.Color = Color3.new(1, 1, 1)
-Circle.Transparency = 0.5
+Circle.Transparency = 0
 Circle.Thickness = 1
 
 local TracerCircle = Drawing.new("Circle")

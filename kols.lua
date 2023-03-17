@@ -28,7 +28,12 @@ getgenv().kols = {
     Checks = {
         WallCheck = true,
         UnlockedOnDeath = true,
-    }
+    },
+    Macro = {
+        Enabled = true,
+        Keybind = h, 
+        Type = Normal,
+        
 }
 getgenv().Settings = {
     Main = {
@@ -96,6 +101,60 @@ getgenv().Settings = {
     },
 }
 
+
+--- macro
+local Player = game:GetService("Players").LocalPlayer
+            local Mouse = Player:GetMouse()
+            local SpeedGlitch = false
+            Mouse.KeyDown:Connect(function(Key)
+                if getgenv().kols.Macro.Type == "Normal" and getgenv().kols.Macro.Enabled == true and Key == getgenv().kols.Macro.Keybind then
+                    SpeedGlitch = not SpeedGlitch
+                    if SpeedGlitch == true then
+                        repeat game:GetService("RunService").Heartbeat:wait()
+                            keypress(0x49)
+                            game:GetService("RunService").Heartbeat:wait()
+
+                            keypress(0x4F)
+                            game:GetService("RunService").Heartbeat:wait()
+
+                            keyrelease(0x49)
+                            game:GetService("RunService").Heartbeat:wait()
+
+                            keyrelease(0x4F)
+                            game:GetService("RunService").Heartbeat:wait()
+
+                        until SpeedGlitch == false
+                    end
+                end
+            end)
+            
+            
+            
+            local Player = game:GetService("Players").LocalPlayer
+            local Mouse = Player:GetMouse()
+            local SpeedGlitch = false
+            Mouse.KeyDown:Connect(function(Key)
+                if getgenv().kols.Macro.Type == "Shift" and getgenv().kols.Macro.Enabled == true and Key == getgenv().kols.Macro.Keybind then
+                    SpeedGlitch = not SpeedGlitch
+                    if SpeedGlitch == true then
+                        repeat game:GetService("RunService").Heartbeat:wait()
+
+                            keypress(0xA0)
+                            game:GetService("RunService").Heartbeat:wait()
+
+                            keypress(0xA0)
+                            game:GetService("RunService").Heartbeat:wait()
+
+                            keyrelease(0xA0)
+                            game:GetService("RunService").Heartbeat:wait()
+
+                            keyrelease(0xA0)
+                            game:GetService("RunService").Heartbeat:wait()
+
+                        until SpeedGlitch == false
+                    end
+                end
+            end)
 
 local Players, Client, Mouse, RS, Camera, r =
 game:GetService("Players"),

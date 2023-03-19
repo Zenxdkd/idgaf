@@ -119,7 +119,7 @@ end
 uwuSettings:Slider({Name = "Tracer Prediction",
 Minimum = 0.001,
 Maximum = 10,
-Default = 0.200,
+Default = 0.207,
 Decimals = 0.001,
 Pointer = "AimbotMain_Booty",
 Callback = function(v)

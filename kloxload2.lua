@@ -85,7 +85,7 @@ end
 uwuSettings:Slider({Name = "Smoothness",
 Minimum = 0.001,
 Maximum = 1.5,
-Default = 0.033,
+Default = 0.04,
 Decimals = 0.001,
 Pointer = "AimbotMain_Smoothness",
 Callback = function(v)

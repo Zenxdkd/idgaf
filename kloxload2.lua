@@ -85,7 +85,7 @@ end
 uwuSettings:Slider({Name = "Smoothness",
 Minimum = 0.001,
 Maximum = 1.5,
-Default = 0.04,
+Default = 0.045,
 Decimals = 0.001,
 Pointer = "AimbotMain_Smoothness",
 Callback = function(v)
@@ -97,7 +97,7 @@ end
 uwuSettings:Slider({Name = "FOV Radius",
 Minimum = 0.01,
 Maximum = 100,
-Default = 20,
+Default = 25,
 Decimals = 0.01,
 Pointer = "AimbotMain_Radius",
 Callback = function(v)
